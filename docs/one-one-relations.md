@@ -59,7 +59,7 @@ Likewise (but note that if we do omit the `Owner.hasOne(Pug)`, this is not possi
 
 ```javascript
 const ownersWithTheirPug = await Owner.findAll({
-  include: [{model: 'Pug'}]
+  include: [{model: Pug}]
 })
 
 console.log(ownersWithTheirPug[0])

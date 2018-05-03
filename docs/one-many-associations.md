@@ -63,7 +63,7 @@ Likewise (but note that if we do omit the `Owner.hasMany(Pug)`, this is not poss
 ```javascript
 // the difference is that instead of a "pug" field, the owner has a "pugs" field, which is an array of all that owner's pugs
 const ownersWithTheirPug = await Owner.findAll({
-  include: [{model: 'Pug'}]
+  include: [{model: Pug}]
 })
 
 console.log(ownersWithTheirPug[0])
